@@ -1,0 +1,462 @@
+/* JOSH COMEAU */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lato", sans-serif;
+  background-color: #f5f8fa;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ----MAIN CSS---- */
+
+/* Header Navigation */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 40px;
+  padding-block: 24px;
+  border-block-end: 1px solid #e0e6ea;
+}
+
+.logo {
+  width: 200px;
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  > li {
+    margin-inline-end: 40px;
+    font-weight: 700;
+    font-size: 14px;
+
+    &:nth-last-of-type(2) {
+      border: 2px solid #646e7a;
+      margin-inline-end: 0px;
+      border-radius: 6px;
+      padding: 10px 18px;
+    }
+
+    &:last-of-type {
+      padding: 4px 8px;
+      border-radius: 5px;
+      margin-inline-end: 0px;
+      color: #fff;
+      background-color: #1179bf;
+    }
+  }
+}
+
+/* Side Bar */
+.fa-bars {
+  font-size: 26px;
+}
+
+.fa-xmark {
+  font-size: 26px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #1179bf;
+}
+
+.side-bar {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #ffffff;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  box-shadow: -10px 0 8px rgba(0, 0, 0, 0.05);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  > li {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 16px;
+    margin-block-end: 16px;
+    width: 100%;
+    text-align: center;
+
+    &:first-of-type {
+      text-align: right;
+    }
+  }
+}
+
+.menu-button {
+  display: none;
+}
+
+/* Main Content */
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  margin-block: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 860px;
+}
+
+/* First Container */
+.checkout-container {
+  background-color: #ffffff;
+  width: 70%;
+  border-radius: 8px 0px 0px 8px;
+  min-height: 100%;
+}
+
+.checkout-heading {
+  padding-inline: 48px;
+  padding-block: 40px;
+  border-block-end: 2px solid #f5f7fa;
+
+  > h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+.basic-info {
+  padding-inline: 48px;
+  padding-block: 40px;
+  border-block-end: 2px solid #f5f7fa;
+}
+
+.basic-info-heading {
+  font-size: 18px;
+  font-weight: 700;
+
+  > span {
+    color: #548bc5;
+    margin-inline-end: 10px;
+    border: 2px solid #548bc5;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+
+input[type="number"],
+input[type="text"],
+input[type="text"],
+input[type="email"] {
+  background-color: #edeff2;
+  color: #646e7a;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-block-start: 8px;
+}
+
+.basic-info-names {
+  margin-block-start: 10px;
+}
+
+.name-input-row {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.name-input {
+  width: 50%;
+}
+
+.basic-info-email {
+  margin-block-start: 15px;
+}
+
+.payment-info {
+  padding-inline: 48px;
+  padding-block: 40px;
+  border-block-end: 2px solid #f5f7fa;
+}
+
+.credit {
+  margin-block-start: 20px;
+}
+
+.card-input {
+  display: flex;
+  align-items: center;
+}
+
+#credit-card {
+  width: 60%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#card-expiry {
+  width: 20%;
+  border-radius: 0px;
+}
+
+#cvc {
+  width: 20%;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.support-section {
+  padding-inline: 48px;
+  padding-block: 40px;
+  text-align: center;
+}
+
+.support-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.support-main button {
+  border: none;
+  background-color: #038e7d;
+  color: #fff;
+  padding-block: 15px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+}
+
+.help {
+  margin-block-start: 24px;
+  text-align: center;
+
+  > span {
+    border: 2px solid #548bc5;
+    color: #548bc5;
+    font-weight: 900;
+    padding: 4px 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-inline-end: 10px;
+  }
+}
+
+.stripe {
+  display: inline-block;
+  text-align: center;
+  margin-block-start: 24px;
+  color: #fff;
+  background-color: #919da9;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+
+  > span {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+/* Second Container */
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #1179bf;
+  width: 30%;
+  color: #fff;
+  padding-inline: 48px;
+  padding-block: 40px;
+  border-radius: 0px 8px 8px 0px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.freelancer {
+  font-size: 20px;
+  font-weight: 700;
+  margin-block-end: 5px;
+}
+
+.duration {
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+
+.dollar-amount {
+  font-size: 60px;
+  font-weight: 300;
+  padding-inline-start: 12px;
+  position: relative;
+
+  &::before {
+    content: "$";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.pricing-duration p:last-of-type {
+  font-size: 20px;
+  font-weight: 400;
+  margin-block-start: 5px;
+  font-style: italic;
+}
+
+.pricing-benefits {
+  margin-block-start: 36px;
+
+  > ul {
+    list-style: none;
+
+    > li {
+      margin-block-end: 16px;
+      font-weight: 700;
+
+      > span {
+        margin-inline-end: 10px;
+        color: #b9f5ff;
+      }
+    }
+  }
+}
+
+.agency-plan {
+  margin-block-start: 36px;
+  padding-block-end: 42px;
+  border-block-end: 2px solid #b9f4ff51;
+  > p {
+    font-size: 16px;
+
+    > span {
+      font-weight: 700;
+    }
+  }
+}
+
+.switch {
+  border-block-end: 4px solid #b9f5ff;
+}
+
+.pricing-note {
+  margin-block-start: 42px;
+
+  > p {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+
+    > span {
+      font-weight: 700;
+    }
+  }
+}
+
+.placeholder {
+  margin-block-start: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-inline-end: 16px;
+  }
+
+  > p {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-block-end: 20px;
+
+  > p span {
+    color: steelblue;
+  }
+}

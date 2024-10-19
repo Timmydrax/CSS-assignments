@@ -1,0 +1,69 @@
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+    margin-block: 60px;
+  }
+}
+
+/* Tab Nav */
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 80%;
+    margin-block: 60px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .checkout-container {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .pricing-container {
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+  }
+
+  .agency-plan {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+    margin-block: 32px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .checkout-heading,
+  .basic-info,
+  .payment-info,
+  .support-section,
+  .pricing-container {
+    padding-block: 24px;
+    padding-inline: 16px;
+  }
+}
+
+/* Mobile Nav */
+@media (max-width: 400px) {
+  .side-bar {
+    width: 100%;
+  }
+}

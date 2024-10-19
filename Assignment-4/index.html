@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="wrapper">
+        <div class="container">
+          <div class="logo-container">
+            <div class="logo">
+              <!-- <img src="./assets/images/Logo.png" alt="A brand logo" /> -->
+            </div>
+            <div class="logo-text">
+              <h1>For Individuals</h1>
+              <p>
+                Start benefiting from the wellness experience. For companies
+                looking on increasing productivity, and improving organization
+                wellness.
+              </p>
+            </div>
+          </div>
+
+          <div class="form-container">
+            <form class="form-inputs">
+              <div class="form-inputs-row">
+                <div class="form-inputs-container">
+                  <label for="first_name">First Name</label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    placeholder="Enter first name"
+                  />
+                </div>
+
+                <div class="form-inputs-container">
+                  <label for="last_name">Last Name</label>
+                  <input
+                    type="text"
+                    id="last_name"
+                    name="last-name"
+                    placeholder="Enter last name"
+                  />
+                </div>
+              </div>
+
+              <div class="form-inputs-row">
+                <div class="form-inputs-container">
+                  <label for="gender">Gender</label>
+                  <select id="gender">
+                    <option value="" disabled selected>Select Here</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+
+                <div class="form-inputs-container">
+                  <label for="birthdate">Date Of Birth</label>
+                  <input type="date" id="birthdate" name="birthdate" />
+                </div>
+              </div>
+
+              <div class="form-inputs-row">
+                <div class="form-inputs-container">
+                  <label for="weight">Weight (KG)</label>
+                  <input
+                    type="number"
+                    id="weight"
+                    name="weight"
+                    min="0"
+                    step="0.1"
+                  />
+                </div>
+
+                <div class="form-inputs-container">
+                  <label for="height">Height (CM)</label>
+                  <input
+                    type="number"
+                    id="height"
+                    name="height"
+                    min="0"
+                    steps="1"
+                  />
+                </div>
+              </div>
+
+              <div class="form-inputs-row">
+                <div class="form-inputs-container">
+                  <label for="level">Activity Level</label>
+                  <select id="level">
+                    <option value="" disabled selected>Select Here</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-inputs-row">
+                <div class="form-inputs-container">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-submit-btn">
+                <button type="submit">Register</button>
+              </div>
+
+              <p class="form-footer">
+                By clicking Register, you agree to our
+                <span>Terms of Use</span> and our <span>Privacy Policy</span>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

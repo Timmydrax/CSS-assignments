@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WP Pusher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ea749a88b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header-nav">
+      <div class="logo">
+        <img src="./assets/images/wppusher-logo copy.png" alt="" />
+      </div>
+      <nav class="nav-container">
+        <ul class="nav-links" id="nav-links">
+          <li class="hideOnMobile">Download</li>
+          <li class="hideOnMobile">Learn More</li>
+          <li class="hideOnMobile">Pricing</li>
+          <li class="hideOnMobile">Help</li>
+          <li class="hideOnMobile">Account</li>
+          <li class="menu-button" onclick="showSidebar()">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </ul>
+        <ul class="side-bar" id="side-bar" role="dialog">
+          <li onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></li>
+          <li>Download</li>
+          <li>Learn More</li>
+          <li>Pricing</li>
+          <li>Help</li>
+          <li>Account</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="wrapper">
+        <div class="checkout-container">
+          <div class="checkout-heading">
+            <h1>Checkout</h1>
+          </div>
+
+          <div class="basic-info">
+            <p class="basic-info-heading">
+              <span>1</span>
+              Your Basic Information
+            </p>
+
+            <div class="basic-info-names">
+              <div class="name-input-row">
+                <div class="name-input">
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    name="firstname"
+                    id="first-name"
+                    placeholder="John"
+                  />
+                </div>
+
+                <div class="name-input">
+                  <label for="last-name">Last Name</label>
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="last-name"
+                    placeholder="Doe"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="basic-info-email">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="janedoe@example.com"
+              />
+            </div>
+          </div>
+
+          <div class="payment-info">
+            <p class="basic-info-heading">
+              <span>2</span>
+              Your Payment Information
+            </p>
+
+            <div class="credit">
+              <label for="credit-card" id="credit">Credit Card</label>
+            </div>
+
+            <div class="card-input">
+              <input
+                type="number"
+                name="card-number"
+                id="credit-card"
+                placeholder="Card Number"
+                required
+              />
+
+              <input
+                type="number"
+                id="card-expiry"
+                placeholder="MM/YY"
+                maxlength="5"
+                pattern="(0[1-9]|1[0-2])\/[0-9]{2}"
+                required
+              />
+              <input
+                type="number"
+                id="cvc"
+                placeholder="CVC"
+                maxlength="4"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="support-section">
+            <div class="support-main">
+              <button type="submit">Buy WP Pusher</button>
+              <p class="help">
+                <span>?</span> <b>Need any help?</b> Don't hesitate to contact
+                support!
+              </p>
+            </div>
+
+            <p class="stripe">Powered by <span>Stripe</span></p>
+          </div>
+        </div>
+
+        <!-- Second Container -->
+        <div class="pricing-container">
+          <div class="pricing-duration">
+            <p class="freelancer">Freelancer</p>
+            <p class="duration"><span class="dollar-amount">99</span>/year</p>
+            <p>Automatically renews after 1 year</p>
+          </div>
+
+          <div class="pricing-benefits">
+            <ul>
+              <li>
+                <span><i class="fa-regular fa-circle-check"></i></span>Use on 5
+                client sites
+              </li>
+              <li>
+                <span><i class="fa-regular fa-circle-check"></i></span>Private
+                repositories
+              </li>
+              <li>
+                <span><i class="fa-regular fa-circle-check"></i></span>Email
+                Support
+              </li>
+            </ul>
+
+            <div class="agency-plan">
+              <p>Need <span>20</span> client sites?</p>
+              <p><span class="switch">Switch to Agency Plan.</span></p>
+            </div>
+          </div>
+
+          <div class="pricing-note">
+            <p>
+              FTP is horrible to deal with. <span>WP Pusher</span> solves that
+              issue, and the customer support is awesome!
+            </p>
+            <div class="placeholder">
+              <img src="./assets/images/Bitmap.png" alt="" />
+              <p>Kirk Beard</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">
+        © 2018 WP Pusher IVS <span>· Terms of Service</span>
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

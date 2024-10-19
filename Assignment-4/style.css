@@ -1,0 +1,198 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f7fdfc;
+  font-family: "Lato", sans-serif;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* --------------- */
+/* MAIN CSS */
+/* --------------- */
+
+/* Section Wrapper */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-block: 80px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  background-image: url(./assets/images/Logo.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-text {
+  margin-block-start: 30px;
+
+  > h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  > p {
+    color: #737373;
+    font-size: 1rem;
+    margin-block-start: 20px;
+    max-width: 420px;
+  }
+}
+
+/* Form container */
+.form-container {
+  width: 50%;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-inputs {
+  max-width: 580px;
+}
+
+.form-inputs-row {
+  margin-block-end: 30px;
+  display: flex;
+  gap: 24px;
+}
+
+.form-inputs-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-block-end: 8px;
+  font-weight: 600;
+  color: #011c34;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="number"],
+select {
+  padding: 12px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+
+  &:focus {
+    outline: 1px solid #2ec4b6;
+  }
+}
+
+button {
+  background-color: #2ec4b6;
+  width: 100%;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.4s ease-in-out;
+
+  &:hover {
+    background-color: #1f968a;
+  }
+}
+
+.form-footer {
+  text-align: center;
+  font-size: 14px;
+  margin-block-start: 16px;
+  font-weight: 400;
+
+  > span {
+    color: #2ec4b6;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}

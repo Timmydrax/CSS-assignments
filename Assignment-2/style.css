@@ -1,0 +1,133 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lato", sans-serif;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Main CSS */
+h2 {
+  line-height: 1.2;
+}
+
+p {
+  margin-block-end: 16px;
+  font-size: 1.25rem;
+}
+
+strong {
+  color: hsla(160, 100%, 30%, 1);
+  font-weight: 800;
+}
+
+/* Section Top Nesting */
+section.top {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-inline: 24px;
+  padding-block-start: 96px;
+  padding-block-end: 64px;
+
+  > h2 {
+    font-size: 2rem;
+    margin-block-end: 48px;
+  }
+
+  > p {
+    max-width: 415px;
+  }
+
+  > p:last-of-type {
+    margin-block-end: 0px;
+  }
+}
+
+/* Section Bottom */
+section.bottom {
+  border-top: 8px solid #999999;
+  background-color: hsla(0, 0%, 40%, 1);
+  padding-block-start: 72px;
+  padding-block-end: 58px;
+}
+
+.card {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-inline: 24px;
+  padding-block-end: 24px;
+  padding-block-start: 8px;
+  border-bottom: 8px solid #999999;
+
+  > h2 {
+    font-size: 1.5rem;
+    display: inline-block;
+    /* width: max-content; */
+    background-color: hsla(45, 100%, 50%, 1);
+    border-block-end: 8px solid hsla(45, 100%, 40%, 1);
+    padding-block: 16px;
+    padding-inline: 32px;
+    margin-inline-start: -32px;
+    margin-block-end: 16px;
+  }
+
+  > p:last-of-type {
+    margin-block-end: 0px;
+  }
+}
