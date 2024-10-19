@@ -67,7 +67,8 @@ h2 {
 }
 
 p {
-  margin-block-end: 16px;
+  -webkit-margin-after: 16px;
+          margin-block-end: 16px;
   font-size: 1.25rem;
 }
 
@@ -81,12 +82,15 @@ section.top {
   max-width: 800px;
   margin: 0 auto;
   padding-inline: 24px;
-  padding-block-start: 96px;
-  padding-block-end: 64px;
+  -webkit-padding-before: 96px;
+          padding-block-start: 96px;
+  -webkit-padding-after: 64px;
+          padding-block-end: 64px;
 
   > h2 {
     font-size: 2rem;
-    margin-block-end: 48px;
+    -webkit-margin-after: 48px;
+            margin-block-end: 48px;
   }
 
   > p {
@@ -94,7 +98,8 @@ section.top {
   }
 
   > p:last-of-type {
-    margin-block-end: 0px;
+    -webkit-margin-after: 0px;
+            margin-block-end: 0px;
   }
 }
 
@@ -102,8 +107,10 @@ section.top {
 section.bottom {
   border-top: 8px solid #999999;
   background-color: hsla(0, 0%, 40%, 1);
-  padding-block-start: 72px;
-  padding-block-end: 58px;
+  -webkit-padding-before: 72px;
+          padding-block-start: 72px;
+  -webkit-padding-after: 58px;
+          padding-block-end: 58px;
 }
 
 .card {
@@ -111,8 +118,10 @@ section.bottom {
   margin: 0 auto;
   background-color: #fff;
   padding-inline: 24px;
-  padding-block-end: 24px;
-  padding-block-start: 8px;
+  -webkit-padding-after: 24px;
+          padding-block-end: 24px;
+  -webkit-padding-before: 8px;
+          padding-block-start: 8px;
   border-bottom: 8px solid #999999;
 
   > h2 {
@@ -120,14 +129,18 @@ section.bottom {
     display: inline-block;
     /* width: max-content; */
     background-color: hsla(45, 100%, 50%, 1);
-    border-block-end: 8px solid hsla(45, 100%, 40%, 1);
+    -webkit-border-after: 8px solid hsla(45, 100%, 40%, 1);
+            border-block-end: 8px solid hsla(45, 100%, 40%, 1);
     padding-block: 16px;
     padding-inline: 32px;
-    margin-inline-start: -32px;
-    margin-block-end: 16px;
+    -webkit-margin-start: -32px;
+            margin-inline-start: -32px;
+    -webkit-margin-after: 16px;
+            margin-block-end: 16px;
   }
 
   > p:last-of-type {
-    margin-block-end: 0px;
+    -webkit-margin-after: 0px;
+            margin-block-end: 0px;
   }
 }

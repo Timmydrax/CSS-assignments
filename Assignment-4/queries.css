@@ -42,7 +42,8 @@
   }
 
   .logo-text {
-    margin-block-start: 20px;
+    -webkit-margin-before: 20px;
+            margin-block-start: 20px;
   }
 }
 
@@ -53,7 +54,8 @@
   }
 
   .logo-text {
-    margin-block-start: 24px;
+    -webkit-margin-before: 24px;
+            margin-block-start: 24px;
 
     > h1 {
       font-size: 2rem;
@@ -63,13 +65,15 @@
     > p {
       color: #737373;
       font-size: 1rem;
-      margin-block-start: 16px;
+      -webkit-margin-before: 16px;
+              margin-block-start: 16px;
       max-width: 420px;
     }
   }
 
   .form-inputs-row {
-    margin-block-end: 24px;
+    -webkit-margin-after: 24px;
+            margin-block-end: 24px;
     display: flex;
     flex-direction: column;
     gap: 24px;

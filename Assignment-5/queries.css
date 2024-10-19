@@ -22,7 +22,13 @@
     margin-block: 60px;
     display: flex;
     flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .header-nav {
+    padding-inline: 24px;
   }
 
   .checkout-container {
@@ -48,7 +54,13 @@
     margin-block: 32px;
     display: flex;
     flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .header-nav {
+    padding-inline: 24px;
   }
 
   .checkout-heading,

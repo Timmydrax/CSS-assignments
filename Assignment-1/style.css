@@ -84,16 +84,20 @@ h6 {
 h1 {
   font-size: 2rem;
   margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   background-color: #4682b4;
   color: #fff;
   padding-inline: 28px;
   padding-block: 16px;
   border-radius: 5px;
-  margin-block-start: -40px;
+  -webkit-margin-before: -40px;
+          margin-block-start: -40px;
 }
 
 p {
-  margin-block-start: 16px;
+  -webkit-margin-before: 16px;
+          margin-block-start: 16px;
   font-weight: 500;
 }

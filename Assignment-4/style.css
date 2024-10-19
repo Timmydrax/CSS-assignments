@@ -102,7 +102,8 @@ h6 {
 }
 
 .logo-text {
-  margin-block-start: 30px;
+  -webkit-margin-before: 30px;
+          margin-block-start: 30px;
 
   > h1 {
     font-size: 2.5rem;
@@ -112,7 +113,8 @@ h6 {
   > p {
     color: #737373;
     font-size: 1rem;
-    margin-block-start: 20px;
+    -webkit-margin-before: 20px;
+            margin-block-start: 20px;
     max-width: 420px;
   }
 }
@@ -132,7 +134,8 @@ h6 {
 }
 
 .form-inputs-row {
-  margin-block-end: 30px;
+  -webkit-margin-after: 30px;
+          margin-block-end: 30px;
   display: flex;
   gap: 24px;
 }
@@ -145,7 +148,8 @@ h6 {
 
 label {
   display: block;
-  margin-block-end: 8px;
+  -webkit-margin-after: 8px;
+          margin-block-end: 8px;
   font-weight: 600;
   color: #011c34;
 }
@@ -187,7 +191,8 @@ button {
 .form-footer {
   text-align: center;
   font-size: 14px;
-  margin-block-start: 16px;
+  -webkit-margin-before: 16px;
+          margin-block-start: 16px;
   font-weight: 400;
 
   > span {

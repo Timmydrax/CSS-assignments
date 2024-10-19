@@ -81,7 +81,8 @@ h6 {
   align-items: center;
   padding-inline: 40px;
   padding-block: 24px;
-  border-block-end: 1px solid #e0e6ea;
+  -webkit-border-after: 1px solid #e0e6ea;
+          border-block-end: 1px solid #e0e6ea;
 }
 
 .logo {
@@ -95,13 +96,15 @@ h6 {
   align-items: center;
 
   > li {
-    margin-inline-end: 40px;
+    -webkit-margin-end: 40px;
+            margin-inline-end: 40px;
     font-weight: 700;
     font-size: 14px;
 
     &:nth-last-of-type(2) {
       border: 2px solid #646e7a;
-      margin-inline-end: 0px;
+      -webkit-margin-end: 0px;
+              margin-inline-end: 0px;
       border-radius: 6px;
       padding: 10px 18px;
     }
@@ -109,7 +112,8 @@ h6 {
     &:last-of-type {
       padding: 4px 8px;
       border-radius: 5px;
-      margin-inline-end: 0px;
+      -webkit-margin-end: 0px;
+              margin-inline-end: 0px;
       color: #fff;
       background-color: #1179bf;
     }
@@ -137,7 +141,8 @@ h6 {
   height: 100vh;
   width: 250px;
   background-color: #ffffff;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   z-index: 999;
   box-shadow: -10px 0 8px rgba(0, 0, 0, 0.05);
   display: none;
@@ -149,7 +154,8 @@ h6 {
     font-weight: 700;
     font-size: 14px;
     padding: 16px;
-    margin-block-end: 16px;
+    -webkit-margin-after: 16px;
+            margin-block-end: 16px;
     width: 100%;
     text-align: center;
 
@@ -186,7 +192,8 @@ h6 {
 .checkout-heading {
   padding-inline: 48px;
   padding-block: 40px;
-  border-block-end: 2px solid #f5f7fa;
+  -webkit-border-after: 2px solid #f5f7fa;
+          border-block-end: 2px solid #f5f7fa;
 
   > h1 {
     font-size: 30px;
@@ -197,7 +204,8 @@ h6 {
 .basic-info {
   padding-inline: 48px;
   padding-block: 40px;
-  border-block-end: 2px solid #f5f7fa;
+  -webkit-border-after: 2px solid #f5f7fa;
+          border-block-end: 2px solid #f5f7fa;
 }
 
 .basic-info-heading {
@@ -206,7 +214,8 @@ h6 {
 
   > span {
     color: #548bc5;
-    margin-inline-end: 10px;
+    -webkit-margin-end: 10px;
+            margin-inline-end: 10px;
     border: 2px solid #548bc5;
     font-size: 1rem;
     padding: 5px 10px;
@@ -225,11 +234,13 @@ input[type="email"] {
   width: 100%;
   border: none;
   border-radius: 5px;
-  margin-block-start: 8px;
+  -webkit-margin-before: 8px;
+          margin-block-start: 8px;
 }
 
 .basic-info-names {
-  margin-block-start: 10px;
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
 }
 
 .name-input-row {
@@ -243,17 +254,20 @@ input[type="email"] {
 }
 
 .basic-info-email {
-  margin-block-start: 15px;
+  -webkit-margin-before: 15px;
+          margin-block-start: 15px;
 }
 
 .payment-info {
   padding-inline: 48px;
   padding-block: 40px;
-  border-block-end: 2px solid #f5f7fa;
+  -webkit-border-after: 2px solid #f5f7fa;
+          border-block-end: 2px solid #f5f7fa;
 }
 
 .credit {
-  margin-block-start: 20px;
+  -webkit-margin-before: 20px;
+          margin-block-start: 20px;
 }
 
 .card-input {
@@ -303,7 +317,8 @@ input[type="email"] {
 }
 
 .help {
-  margin-block-start: 24px;
+  -webkit-margin-before: 24px;
+          margin-block-start: 24px;
   text-align: center;
 
   > span {
@@ -315,14 +330,16 @@ input[type="email"] {
     width: 20px;
     height: 20px;
     text-align: center;
-    margin-inline-end: 10px;
+    -webkit-margin-end: 10px;
+            margin-inline-end: 10px;
   }
 }
 
 .stripe {
   display: inline-block;
   text-align: center;
-  margin-block-start: 24px;
+  -webkit-margin-before: 24px;
+          margin-block-start: 24px;
   color: #fff;
   background-color: #919da9;
   padding: 4px 8px;
@@ -352,7 +369,8 @@ input[type="email"] {
 .freelancer {
   font-size: 20px;
   font-weight: 700;
-  margin-block-end: 5px;
+  -webkit-margin-after: 5px;
+          margin-block-end: 5px;
 }
 
 .duration {
@@ -364,7 +382,8 @@ input[type="email"] {
 .dollar-amount {
   font-size: 60px;
   font-weight: 300;
-  padding-inline-start: 12px;
+  -webkit-padding-start: 12px;
+          padding-inline-start: 12px;
   position: relative;
 
   &::before {
@@ -380,22 +399,26 @@ input[type="email"] {
 .pricing-duration p:last-of-type {
   font-size: 20px;
   font-weight: 400;
-  margin-block-start: 5px;
+  -webkit-margin-before: 5px;
+          margin-block-start: 5px;
   font-style: italic;
 }
 
 .pricing-benefits {
-  margin-block-start: 36px;
+  -webkit-margin-before: 36px;
+          margin-block-start: 36px;
 
   > ul {
     list-style: none;
 
     > li {
-      margin-block-end: 16px;
+      -webkit-margin-after: 16px;
+              margin-block-end: 16px;
       font-weight: 700;
 
       > span {
-        margin-inline-end: 10px;
+        -webkit-margin-end: 10px;
+                margin-inline-end: 10px;
         color: #b9f5ff;
       }
     }
@@ -403,9 +426,12 @@ input[type="email"] {
 }
 
 .agency-plan {
-  margin-block-start: 36px;
-  padding-block-end: 42px;
-  border-block-end: 2px solid #b9f4ff51;
+  -webkit-margin-before: 36px;
+          margin-block-start: 36px;
+  -webkit-padding-after: 42px;
+          padding-block-end: 42px;
+  -webkit-border-after: 2px solid #b9f4ff51;
+          border-block-end: 2px solid #b9f4ff51;
   > p {
     font-size: 16px;
 
@@ -416,11 +442,13 @@ input[type="email"] {
 }
 
 .switch {
-  border-block-end: 4px solid #b9f5ff;
+  -webkit-border-after: 4px solid #b9f5ff;
+          border-block-end: 4px solid #b9f5ff;
 }
 
 .pricing-note {
-  margin-block-start: 42px;
+  -webkit-margin-before: 42px;
+          margin-block-start: 42px;
 
   > p {
     font-size: 18px;
@@ -434,7 +462,8 @@ input[type="email"] {
 }
 
 .placeholder {
-  margin-block-start: 16px;
+  -webkit-margin-before: 16px;
+          margin-block-start: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -443,7 +472,8 @@ input[type="email"] {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-inline-end: 16px;
+    -webkit-margin-end: 16px;
+            margin-inline-end: 16px;
   }
 
   > p {
@@ -454,7 +484,8 @@ input[type="email"] {
 
 footer {
   text-align: center;
-  margin-block-end: 20px;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
 
   > p span {
     color: steelblue;
