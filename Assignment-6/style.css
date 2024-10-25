@@ -1,0 +1,659 @@
+/* --------- */
+/* JOSH COMEAU */
+/* -------- */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Gilroy", sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+/* ---------- */
+/* FONTS */
+/* ---------- */
+
+/* Font weight: 100 (Thin) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Font weight: 100 (Thin Italic) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Font weight: 200 (Extra Light) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Font weight: 200 (Extra Light Italic) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-UltraLightItalic.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/gilroy/Gilroy-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Regular */
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Regular Italic */
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/gilroy/Gilroy-RegularItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Font weight: 500 (Medium) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Font weight: 500 (Medium Italic) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Font weight: 600 (Semi Bold) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Font weight: 600 (Semi Bold Italic) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Font weight: 800 (Extra Bold) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Font weight: 800 (Extra Bold Italic) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-ExtraBoldItalic.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Black */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Font weight: 900 (Black Italic) */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/fonts/gilroy/Gilroy-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --font-color: #141414;
+  --primary-color: #0065fe;
+  --white-color: #fff;
+}
+
+/* ---------- */
+/* MAIN CSS */
+/* --------- */
+
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  padding-inline: 4rem;
+  padding-block: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+
+  > li {
+    font-size: 1rem;
+    font-weight: 600;
+
+    > a {
+      color: var(--font-color);
+      text-decoration: none;
+      padding-block: 10px;
+
+      &:hover {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+      }
+    }
+  }
+}
+
+.fa-chevron-down {
+  margin-inline-start: 10px;
+  font-style: normal;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.login-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #c2d9fd;
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+
+.trial-btn {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white-color);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    color: var(--primary-color);
+    background-color: #c2d9fd;
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+
+/* Background Blurs */
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(700px);
+  z-index: 0;
+}
+
+.ellipse-1 {
+  width: 200px;
+  height: 215px;
+  background-color: #d60505;
+  top: 10%;
+  left: 10%;
+}
+
+.ellipse-2 {
+  width: 200px;
+  height: 215px;
+  background-color: #067808;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ellipse-3 {
+  width: 271px;
+  height: 293px;
+  background-color: #eac81f;
+  top: 30%;
+  right: 10%;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 4rem;
+  align-items: center;
+}
+
+.hero-heading {
+  margin-block-start: 106px;
+  max-width: 948px;
+
+  > p {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+
+    > span {
+      color: #005ae2;
+      position: relative;
+
+      &::after {
+        content: url("./assets/images/Vector\ 3.png");
+        display: inline-block;
+        margin-block-start: 24px;
+        position: absolute;
+        left: -50px;
+        right: -50px;
+      }
+    }
+  }
+}
+
+.hero-sub-heading {
+  margin-block-start: 24px;
+  max-width: 760px;
+
+  > p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--font-color);
+  }
+}
+
+.CTA-btns {
+  margin-block-start: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.Primary-CTA {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: 600;
+  padding: 16px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    color: var(--primary-color);
+    background-color: #c2d9fd;
+    border: 2px so;
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+
+.Secondary-CTA {
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 16px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+
+  &:hover {
+    color: var(--primary-color);
+    background-color: #c2d9fd;
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+
+/* HERO FOOTER SECTION */
+
+.caption-container {
+  margin-block-start: 40px;
+  max-width: 700px;
+  background-image: url("./assets/images/Blob-min-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-inline: 32px;
+  padding-block: 24px;
+  height: 256px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.url-caption {
+  width: 559px;
+  padding-block: 40px;
+  padding-inline: 60px;
+  background-color: #ffffff14;
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.url-img {
+  max-width: 384px;
+}
+
+.url-text {
+  > p {
+    font-weight: 500;
+    text-align: center;
+
+    > span {
+      font-weight: 600;
+    }
+  }
+}
+
+.hero-footer-section {
+  margin: 0 auto;
+}
+
+.hero-footer {
+  margin-block-start: 56px;
+  background-image: url("./assets/images/Rectangle\ background-min.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-block: 16px;
+}
+
+.background-ellipse {
+  width: 856px;
+  height: 49px;
+}
+
+/* KEY METRICS SECTION */
+
+.key-metrics {
+  display: flex;
+  flex-direction: row;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  background-color: #f9fbfd;
+  gap: 7.5rem;
+  align-items: center;
+}
+
+.key-metrics-texts {
+  display: flex;
+  flex-direction: column;
+
+  > p {
+    font-size: 2.25rem;
+    font-weight: 700;
+
+    > span {
+      color: #005ae2;
+    }
+  }
+}
+
+.key-metrics-numbers {
+  display: flex;
+  flex-direction: row;
+  gap: 4.5rem;
+}
+
+.metrics-1,
+.metrics-2,
+.metrics-3,
+.metrics-4 {
+  max-width: 8.75rem;
+  text-align: center;
+
+  > p {
+    font-size: 2rem;
+    margin-block-end: 0.25rem;
+    font-weight: 600;
+  }
+
+  > span {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+/* FEATURES SECTION */
+
+.features {
+  display: flex;
+  flex-direction: row;
+  padding-inline: 4rem;
+  padding-block: 4rem;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
+
+.features-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 25rem;
+
+  > h2 {
+    font-size: 2.25rem;
+    padding-inline-start: 1rem;
+    font-weight: 700;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 5px;
+      background: linear-gradient(to bottom, #112232, #ffffff);
+    }
+
+    > span {
+      color: #005ae2;
+    }
+  }
+
+  > p {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-inline-start: 1rem;
+  }
+}
+
+.features-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.first-row,
+.second-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.75rem;
+}
+
+.element-1,
+.element-2,
+.element-3,
+.element-4 {
+  display: flex;
+  flex-direction: column;
+
+  > h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-block-end: 0.25rem;
+  }
+
+  > p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+.icons {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #e4efff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-block-end: 2rem;
+
+  > img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

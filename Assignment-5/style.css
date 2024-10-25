@@ -82,7 +82,7 @@ h6 {
   padding-inline: 40px;
   padding-block: 24px;
   -webkit-border-after: 1px solid #e0e6ea;
-          border-block-end: 1px solid #e0e6ea;
+  border-block-end: 1px solid #e0e6ea;
 }
 
 .logo {
@@ -97,14 +97,14 @@ h6 {
 
   > li {
     -webkit-margin-end: 40px;
-            margin-inline-end: 40px;
+    margin-inline-end: 40px;
     font-weight: 700;
     font-size: 14px;
 
     &:nth-last-of-type(2) {
       border: 2px solid #646e7a;
       -webkit-margin-end: 0px;
-              margin-inline-end: 0px;
+      margin-inline-end: 0px;
       border-radius: 6px;
       padding: 10px 18px;
     }
@@ -113,7 +113,7 @@ h6 {
       padding: 4px 8px;
       border-radius: 5px;
       -webkit-margin-end: 0px;
-              margin-inline-end: 0px;
+      margin-inline-end: 0px;
       color: #fff;
       background-color: #1179bf;
     }
@@ -142,7 +142,7 @@ h6 {
   width: 250px;
   background-color: #ffffff;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   z-index: 999;
   box-shadow: -10px 0 8px rgba(0, 0, 0, 0.05);
   display: none;
@@ -155,7 +155,7 @@ h6 {
     font-size: 14px;
     padding: 16px;
     -webkit-margin-after: 16px;
-            margin-block-end: 16px;
+    margin-block-end: 16px;
     width: 100%;
     text-align: center;
 
@@ -193,7 +193,7 @@ h6 {
   padding-inline: 48px;
   padding-block: 40px;
   -webkit-border-after: 2px solid #f5f7fa;
-          border-block-end: 2px solid #f5f7fa;
+  border-block-end: 2px solid #f5f7fa;
 
   > h1 {
     font-size: 30px;
@@ -205,7 +205,7 @@ h6 {
   padding-inline: 48px;
   padding-block: 40px;
   -webkit-border-after: 2px solid #f5f7fa;
-          border-block-end: 2px solid #f5f7fa;
+  border-block-end: 2px solid #f5f7fa;
 }
 
 .basic-info-heading {
@@ -215,7 +215,7 @@ h6 {
   > span {
     color: #548bc5;
     -webkit-margin-end: 10px;
-            margin-inline-end: 10px;
+    margin-inline-end: 10px;
     border: 2px solid #548bc5;
     font-size: 1rem;
     padding: 5px 10px;
@@ -235,12 +235,12 @@ input[type="email"] {
   border: none;
   border-radius: 5px;
   -webkit-margin-before: 8px;
-          margin-block-start: 8px;
+  margin-block-start: 8px;
 }
 
 .basic-info-names {
   -webkit-margin-before: 10px;
-          margin-block-start: 10px;
+  margin-block-start: 10px;
 }
 
 .name-input-row {
@@ -255,19 +255,19 @@ input[type="email"] {
 
 .basic-info-email {
   -webkit-margin-before: 15px;
-          margin-block-start: 15px;
+  margin-block-start: 15px;
 }
 
 .payment-info {
   padding-inline: 48px;
   padding-block: 40px;
   -webkit-border-after: 2px solid #f5f7fa;
-          border-block-end: 2px solid #f5f7fa;
+  border-block-end: 2px solid #f5f7fa;
 }
 
 .credit {
   -webkit-margin-before: 20px;
-          margin-block-start: 20px;
+  margin-block-start: 20px;
 }
 
 .card-input {
@@ -318,7 +318,7 @@ input[type="email"] {
 
 .help {
   -webkit-margin-before: 24px;
-          margin-block-start: 24px;
+  margin-block-start: 24px;
   text-align: center;
 
   > span {
@@ -331,7 +331,7 @@ input[type="email"] {
     height: 20px;
     text-align: center;
     -webkit-margin-end: 10px;
-            margin-inline-end: 10px;
+    margin-inline-end: 10px;
   }
 }
 
@@ -339,7 +339,7 @@ input[type="email"] {
   display: inline-block;
   text-align: center;
   -webkit-margin-before: 24px;
-          margin-block-start: 24px;
+  margin-block-start: 24px;
   color: #fff;
   background-color: #919da9;
   padding: 4px 8px;
@@ -370,7 +370,7 @@ input[type="email"] {
   font-size: 20px;
   font-weight: 700;
   -webkit-margin-after: 5px;
-          margin-block-end: 5px;
+  margin-block-end: 5px;
 }
 
 .duration {
@@ -383,7 +383,7 @@ input[type="email"] {
   font-size: 60px;
   font-weight: 300;
   -webkit-padding-start: 12px;
-          padding-inline-start: 12px;
+  padding-inline-start: 12px;
   position: relative;
 
   &::before {
@@ -400,25 +400,25 @@ input[type="email"] {
   font-size: 20px;
   font-weight: 400;
   -webkit-margin-before: 5px;
-          margin-block-start: 5px;
+  margin-block-start: 5px;
   font-style: italic;
 }
 
 .pricing-benefits {
   -webkit-margin-before: 36px;
-          margin-block-start: 36px;
+  margin-block-start: 36px;
 
   > ul {
     list-style: none;
 
     > li {
       -webkit-margin-after: 16px;
-              margin-block-end: 16px;
+      margin-block-end: 16px;
       font-weight: 700;
 
       > span {
         -webkit-margin-end: 10px;
-                margin-inline-end: 10px;
+        margin-inline-end: 10px;
         color: #b9f5ff;
       }
     }
@@ -427,11 +427,11 @@ input[type="email"] {
 
 .agency-plan {
   -webkit-margin-before: 36px;
-          margin-block-start: 36px;
+  margin-block-start: 36px;
   -webkit-padding-after: 42px;
-          padding-block-end: 42px;
+  padding-block-end: 42px;
   -webkit-border-after: 2px solid #b9f4ff51;
-          border-block-end: 2px solid #b9f4ff51;
+  border-block-end: 2px solid #b9f4ff51;
   > p {
     font-size: 16px;
 
@@ -443,12 +443,12 @@ input[type="email"] {
 
 .switch {
   -webkit-border-after: 4px solid #b9f5ff;
-          border-block-end: 4px solid #b9f5ff;
+  border-block-end: 4px solid #b9f5ff;
 }
 
 .pricing-note {
   -webkit-margin-before: 42px;
-          margin-block-start: 42px;
+  margin-block-start: 42px;
 
   > p {
     font-size: 18px;
@@ -463,7 +463,7 @@ input[type="email"] {
 
 .placeholder {
   -webkit-margin-before: 16px;
-          margin-block-start: 16px;
+  margin-block-start: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -473,7 +473,7 @@ input[type="email"] {
     height: 40px;
     border-radius: 50%;
     -webkit-margin-end: 16px;
-            margin-inline-end: 16px;
+    margin-inline-end: 16px;
   }
 
   > p {
@@ -485,7 +485,7 @@ input[type="email"] {
 footer {
   text-align: center;
   -webkit-margin-after: 20px;
-          margin-block-end: 20px;
+  margin-block-end: 20px;
 
   > p span {
     color: steelblue;
