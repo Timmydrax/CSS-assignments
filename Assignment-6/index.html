@@ -306,7 +306,64 @@
           </div>
         </section>
 
-        <section></section>
+        <section class="my-url">
+          <div class="url-inputs">
+            <form>
+
+              <div class="url-row">
+                <label for="url"></label>
+                <input
+                  type="url"
+                  id="url"
+                  name="url"
+                  placeholder="Paste URL here"
+                  required
+                />
+              </div>
+
+              <div class="url-row">
+                <div class="url-second-row-1">
+                  <label for="domain"></label>
+                  <select name="domain" id="domain">
+                    <option value="Choose Domain" selected disabled>
+                      Choose Domain
+                    </option>
+                    <option value="www.tweelo.com">www.tweelo.com</option>
+                    <option value="www.zackintosh.com">www.zackintosh.com</option>
+                    <option value="www.silentbermuda.com">
+                      www.silentbermuda.com
+                    </option>
+                    <option value="www.bermudatriangle.com">
+                      www.bermudatriangle.com
+                    </option>
+                  </select>
+                </div>
+
+                <div class="url-second-row-2">
+                  <label for="alias"></label>
+                  <input
+                    type="text"
+                    name="alias"
+                    id="alias"
+                    placeholder="Type Alias Here"
+                  />
+                </div>
+              </div>
+
+              <button type="submit" class="url-btn">
+                Trim URL
+                <img src="./assets/images/magic wand.png" alt="A magic wand" />
+              </button>
+
+              <p>
+                By clicking TrimURL, I agree to the
+                <span>Terms of Service</span>, <span>Privacy Policy</span> and
+                Use of Cookies.
+              </p>
+            </form>
+          </div>
+        </section>
+
         <section></section>
         <section></section>
       </section>
