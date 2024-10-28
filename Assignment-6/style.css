@@ -903,7 +903,6 @@ h6 {
 .url-row {
   display: flex;
   flex-direction: row;
-  /* width: 100%; */
 
   &:last-of-type {
     gap: 12px;
@@ -927,6 +926,22 @@ select {
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid #3284ff;
+
+  &::-webkit-input-placeholder {
+    color: #3284ff;
+  }
+
+  &::-moz-placeholder {
+    color: #3284ff;
+  }
+
+  &:-ms-input-placeholder {
+    color: #3284ff;
+  }
+
+  &::-ms-input-placeholder {
+    color: #3284ff;
+  }
 
   &::placeholder {
     color: #3284ff;
@@ -968,5 +983,97 @@ form p {
   > span {
     font-weight: 700;
     color: #3284ff;
+  }
+}
+
+/* FAQ Section */
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 4rem;
+  padding-block: 3rem;
+  position: relative;
+  overflow: hidden;
+  background-image: url(./assets/images/FAQs\ background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-section-heading {
+  margin-block-end: 4rem;
+
+  > h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-inline-start: 1rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 5px;
+      background: linear-gradient(to bottom, #112232, #ffffff);
+    }
+  }
+}
+
+.faq-accordion {
+  > details[open] {
+    > summary {
+      background-color: transparent;
+
+      &::after {
+        content: "-";
+      }
+    }
+  }
+
+  > details {
+    border-block-end: 1px solid #d6d6d6;
+    margin-block-end: 2rem;
+
+    > summary {
+      cursor: pointer;
+      margin-block-end: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      padding-block: 0.5rem;
+      position: relative;
+      list-style: none;
+      appearance: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-inline-end: 4rem;
+
+      &::after {
+        content: "+";
+        font-size: 2rem;
+        font-weight: 500;
+        position: absolute;
+        right: 0.5rem;
+        transition: transform 0.5s ease;
+      }
+    }
+
+    > p {
+      font-size: 1rem;
+      font-weight: 500;
+      padding-block: 0.5rem;
+    }
   }
 }
