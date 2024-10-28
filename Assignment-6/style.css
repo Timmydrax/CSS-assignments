@@ -1011,11 +1011,13 @@ form p {
 }
 
 .faq-section-heading {
+  -webkit-margin-after: 4rem;
   margin-block-end: 4rem;
 
   > h2 {
     font-size: 2rem;
     font-weight: 700;
+    -webkit-padding-start: 1rem;
     padding-inline-start: 1rem;
     position: relative;
 
@@ -1043,21 +1045,27 @@ form p {
   }
 
   > details {
+    -webkit-border-after: 1px solid #d6d6d6;
     border-block-end: 1px solid #d6d6d6;
+    -webkit-margin-after: 2rem;
     margin-block-end: 2rem;
 
     > summary {
       cursor: pointer;
+      -webkit-margin-after: 0.5rem;
       margin-block-end: 0.5rem;
       font-size: 1rem;
       font-weight: 600;
       padding-block: 0.5rem;
       position: relative;
       list-style: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
       appearance: none;
       display: flex;
       flex-direction: row;
       align-items: center;
+      -webkit-padding-end: 4rem;
       padding-inline-end: 4rem;
 
       &::after {
@@ -1074,6 +1082,186 @@ form p {
       font-size: 1rem;
       font-weight: 500;
       padding-block: 0.5rem;
+    }
+  }
+}
+
+.CTA-section {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 4rem;
+  padding-block: 5rem;
+  background-image: url(./assets/images/CTA\ background\ 1.0.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.CTA-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50.5rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.cta-heading {
+  margin-block-end: 2rem;
+
+  > p {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+  }
+}
+
+.cta-button {
+  > button {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    border-radius: 6px;
+    background-color: #005ae2;
+    border: none;
+  }
+}
+
+/* Footer Section */
+
+footer {
+  background-image: url(./assets/images/Footer\ background\ 1.0.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-container {
+  padding-inline: 4rem;
+  padding-block: 5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.first-footer-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-block-end: 2.5rem;
+}
+
+/* Footer 1st Row First Section */
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.fa-twitter,
+.fa-instagram,
+.fa-linkedin,
+.fa-square-facebook {
+  font-size: 1rem;
+}
+
+/* Footer 1st Row Second Section */
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row-1,
+.row-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.scissors,
+.solutions,
+.products {
+  padding-inline: 1.5rem;
+  max-width: 180px;
+
+  > h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-block-end: 0.5rem;
+  }
+
+  > p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-block-end: 2px;
+  }
+}
+
+.resources,
+.brand-features,
+.legal {
+  padding-inline: 1.5rem;
+  max-width: 180px;
+
+  > h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-block-end: 0.5rem;
+  }
+
+  > p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-block-end: 2px;
+  }
+}
+
+/* Footer 1st Row Third Section */
+
+.company {
+  padding-inline: 1.5rem;
+  max-width: 180px;
+
+  > h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-block-end: 0.5rem;
+  }
+
+  > p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-block-end: 2px;
+  }
+}
+
+/* Footer 2nd Row */
+.second-footer-row {
+  display: flex;
+  justify-content: center;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  > p {
+    border-inline-end: 1.5px solid var(--font-color);
+    padding-inline-end: 1rem;
+
+    &:last-of-type {
+      border: none;
     }
   }
 }
