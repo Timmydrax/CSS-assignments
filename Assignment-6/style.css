@@ -1106,6 +1106,7 @@ form p {
 }
 
 .cta-heading {
+  -webkit-margin-after: 2rem;
   margin-block-end: 2rem;
 
   > p {
@@ -1124,6 +1125,11 @@ form p {
     border-radius: 6px;
     background-color: #005ae2;
     border: none;
+
+    &:hover {
+      transition: background-color 0.3s ease-in-out;
+      background-color: #0065fe;
+    }
   }
 }
 
@@ -1149,6 +1155,7 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  -webkit-margin-after: 2.5rem;
   margin-block-end: 2.5rem;
 }
 
@@ -1197,12 +1204,14 @@ footer {
   > h3 {
     font-size: 1rem;
     font-weight: 700;
+    -webkit-margin-after: 0.5rem;
     margin-block-end: 0.5rem;
   }
 
   > p {
     font-size: 1rem;
     font-weight: 500;
+    -webkit-margin-after: 2px;
     margin-block-end: 2px;
   }
 }
@@ -1216,12 +1225,14 @@ footer {
   > h3 {
     font-size: 1rem;
     font-weight: 700;
+    -webkit-margin-after: 0.5rem;
     margin-block-end: 0.5rem;
   }
 
   > p {
     font-size: 1rem;
     font-weight: 500;
+    -webkit-margin-after: 2px;
     margin-block-end: 2px;
   }
 }
@@ -1235,12 +1246,14 @@ footer {
   > h3 {
     font-size: 1rem;
     font-weight: 700;
+    -webkit-margin-after: 0.5rem;
     margin-block-end: 0.5rem;
   }
 
   > p {
     font-size: 1rem;
     font-weight: 500;
+    -webkit-margin-after: 2px;
     margin-block-end: 2px;
   }
 }
@@ -1257,7 +1270,9 @@ footer {
   gap: 1rem;
 
   > p {
+    -webkit-border-end: 1.5px solid var(--font-color);
     border-inline-end: 1.5px solid var(--font-color);
+    -webkit-padding-end: 1rem;
     padding-inline-end: 1rem;
 
     &:last-of-type {
