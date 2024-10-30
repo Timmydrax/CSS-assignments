@@ -224,6 +224,12 @@
 
     > p {
       font-size: 2rem;
+
+      > span {
+        color: #005ae2;
+        position: relative;
+        display: block;
+      }
     }
   }
 
