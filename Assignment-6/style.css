@@ -367,7 +367,15 @@ h6 {
     text-align: center;
 
     > a {
+      text-decoration: none;
+      color: var(--font-color);
+
+      &:hover {
+        color: #005ae2;
+      }
+
       > .fa-chevron-down {
+        -webkit-margin-start: 2px;
         margin-inline-start: 2px;
       }
     }
@@ -378,6 +386,7 @@ h6 {
   }
 
   > button {
+    -webkit-margin-after: 1rem;
     margin-block-end: 1rem;
     width: 100%;
   }
