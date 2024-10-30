@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scissors</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./queries.css" />
     <script
       src="https://kit.fontawesome.com/ea749a88b3.js"
       crossorigin="anonymous"
@@ -19,20 +20,39 @@
             alt="A Brand Logo for Scissors"
           />
         </div>
+        <!-- Desktop Nav -->
         <ul class="nav-list">
-          <li><a href="#">My URLs</a></li>
-          <li>
+          <li class="hideOnMobile"><a href="#">My URLs</a></li>
+          <li class="hideOnMobile">
             <a href="#">Features<i class="fa-solid fa-chevron-down"></i></a>
           </li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Analytics</a></li>
-          <li><a href="#">FAQs</a></li>
+          <li class="hideOnMobile"><a href="#">Pricing</a></li>
+          <li class="hideOnMobile"><a href="#">Analytics</a></li>
+          <li class="hideOnMobile"><a href="#">FAQs</a></li>
         </ul>
         <div class="login-container">
-          <button class="login-btn">Log-in</button>
-          <button class="trial-btn">Try for free</button>
+          <button class="hideOnMobile login-btn">Log-in</button>
+          <button class="hideOnMobile trial-btn">Try for free</button>
+          <div class="menu-button" onclick="showSidebar()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </nav>
+      <!-- Tablet & Mobile Nav -->
+      <ul class="side-bar" id="side-bar" role="dialog">
+        <li onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></li>
+        <li><a href="#">My URLs</a></li>
+        <li>
+          <a href="#"
+            ><a href="#">Features<i class="fa-solid fa-chevron-down"></i></a
+          ></a>
+        </li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">FAQs</a></li>
+        <button class="login-btn">Log-in</button>
+        <button class="trial-btn">Try for free</button>
+      </ul>
     </header>
     <main>
       <!-- Background Blur -->
@@ -485,7 +505,6 @@
     <footer>
       <div class="footer-container">
         <div class="first-footer-row">
-
           <div class="first-section">
             <div class="footer-logo">
               <img
@@ -500,20 +519,17 @@
               <div><i class="fa-brands fa-linkedin"></i></div>
               <div><i class="fa-brands fa-square-facebook"></i></div>
             </div>
-
           </div>
 
           <div class="second-section">
-           
             <div class="row-1">
-
               <div class="scissors">
                 <h3>Why Scissors?</h3>
                 <p>Scissor 101</p>
                 <p>Integrations & API</p>
                 <p>Pricing</p>
               </div>
-             
+
               <div class="solutions">
                 <h3>Solutions</h3>
                 <p>Social Media</p>
@@ -528,13 +544,9 @@
                 <p>QR Codes</p>
                 <p>Link-in-bio</p>
               </div>
-
             </div>
 
-
-
             <div class="row-2">
-              
               <div class="resources">
                 <h3>Resources</h3>
                 <p>Blog</p>
@@ -545,8 +557,7 @@
                 <p>Browser Extension</p>
                 <p>Mobile App</p>
               </div>
-            
-              
+
               <div class="brand-features">
                 <h3>Features</h3>
                 <p>Branded Links</p>
@@ -556,8 +567,6 @@
                 <p>QR Code generation</p>
               </div>
 
-           
-              
               <div class="legal">
                 <h3>Legal</h3>
                 <p>Privacy Policy</p>
@@ -566,9 +575,7 @@
                 <p>Acceptable Use Policy</p>
                 <p>Code of Conduct</p>
               </div>
-
             </div>
-
           </div>
 
           <div class="third-section">
@@ -582,7 +589,6 @@
               <p>Reviews</p>
             </div>
           </div>
-
         </div>
 
         <div class="second-footer-row">
@@ -592,7 +598,6 @@
             <p>&copy; Scissor 2023</p>
           </div>
         </div>
-
       </div>
     </footer>
     <script src="./script.js"></script>

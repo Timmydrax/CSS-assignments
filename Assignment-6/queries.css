@@ -1,0 +1,211 @@
+/* Tab Nav */
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+
+/* Mobile Nav */
+@media (max-width: 400px) {
+  .side-bar {
+    width: 100%;
+  }
+}
+
+/* Mini Desktop Screens */
+@media (max-width: 1024px) {
+  .nav-list {
+    gap: 2rem;
+  }
+
+  .pricing {
+    padding-inline: 0rem;
+  }
+
+  .pricing-card-1,
+  .pricing-card-3 {
+    padding-inline: 3.55rem;
+    padding-block: 1.5rem 2rem;
+  }
+
+  .pricing-card-2 {
+    padding-inline: 4rem;
+    padding-block: 3rem 6.25rem;
+  }
+}
+
+/* Tablet Screens */
+@media (max-width: 768px) {
+  .nav-container {
+    padding-inline: 2rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding-inline: 2rem;
+  }
+
+  .hero-heading {
+    -webkit-margin-before: 64px;
+    margin-block-start: 64px;
+    max-width: 948px;
+
+    > p {
+      font-size: 2.5rem;
+    }
+  }
+
+  .url-caption {
+    width: 448px;
+    padding-block: 40px;
+    padding-inline: 60px;
+  }
+
+  .caption-container {
+    padding-inline: 24px;
+  }
+
+  .hero-footer {
+    padding-inline: 64px;
+  }
+
+  /* Key Metrics Section */
+  .key-metrics {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    gap: 2rem;
+  }
+
+  .key-metrics-texts {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  /* Feature Section */
+  .features {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 2rem;
+  }
+
+  .features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .features-heading {
+    max-width: 100%;
+    text-align: center;
+
+    > h2 {
+      margin: 0 auto;
+    }
+  }
+
+  /* Pricing Section */
+  .pricing-heading {
+    -webkit-margin-after: 4rem;
+    margin-block-end: 4rem;
+
+    > h2 {
+      margin: 0 auto;
+    }
+  }
+
+  .pricing-card-1,
+  .pricing-card-3 {
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem 1rem;
+
+    > p {
+      -webkit-margin-after: 1rem;
+      margin-block-end: 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .pricing-card-1 {
+    -webkit-margin-end: -1rem;
+    margin-inline-end: -1rem;
+  }
+
+  .pricing-card-3 {
+    -webkit-margin-start: -1rem;
+    margin-inline-start: -1rem;
+  }
+
+  .pricing-card-2 {
+    padding-inline: 1.75rem;
+    padding-block: 1.5rem 3rem;
+
+    > p {
+      font-size: 1rem;
+      -webkit-margin-after: 1rem;
+      margin-block-end: 1rem;
+    }
+  }
+
+  .card-heading {
+    > h2 {
+      font-size: 1.5rem;
+      -webkit-margin-after: 0.5rem;
+      margin-block-end: 0.5rem;
+    }
+
+    > p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  .card-feature-rows {
+    -webkit-margin-after: 1rem;
+    margin-block-end: 1rem;
+  }
+
+  .secondary-pricing-CTA {
+    padding: 16px 24px;
+  }
+
+  .primary-pricing-CTA {
+    padding: 16px 24px;
+  }
+
+  /* Footer */
+  .footer-container {
+    padding-inline: 2rem;
+    padding-block: 2.5rem 2.5rem;
+  }
+
+  .scissors,
+  .solutions,
+  .products {
+    padding-inline: 1rem;
+  }
+
+  .resources,
+  .brand-features,
+  .legal {
+    padding-inline: 1rem;
+  }
+
+  .company {
+    padding-inline: 1rem;
+  }
+
+  .first-footer-row {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+}

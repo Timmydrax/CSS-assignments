@@ -283,8 +283,8 @@ h6 {
 }
 
 .fa-chevron-down {
-  -webkit-margin-start: 10px;
-  margin-inline-start: 10px;
+  -webkit-margin-start: 6px;
+  margin-inline-start: 6px;
   font-style: normal;
 }
 
@@ -323,6 +323,68 @@ h6 {
     background-color: #c2d9fd;
     transition: background-color 0.3s ease-in-out;
   }
+}
+
+/* Side Bar */
+
+.fa-bars {
+  font-size: 26px;
+}
+
+.fa-xmark {
+  font-size: 26px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #005ae2;
+}
+
+.side-bar {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #ffffff;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  box-shadow: -10px 0 8px rgba(0, 0, 0, 0.05);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-inline: 1rem;
+
+  > li {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8px;
+    -webkit-margin-after: 16px;
+    margin-block-end: 16px;
+    width: 100%;
+    text-align: center;
+
+    > a {
+      > .fa-chevron-down {
+        margin-inline-start: 2px;
+      }
+    }
+
+    &:first-of-type {
+      text-align: right;
+    }
+  }
+
+  > button {
+    margin-block-end: 1rem;
+    width: 100%;
+  }
+}
+
+.menu-button {
+  display: none;
 }
 
 /* Background Blurs */
@@ -677,8 +739,8 @@ h6 {
 .pricing {
   display: flex;
   flex-direction: column;
-  margin-inline: 4rem;
-  margin-block: 2.5rem;
+  padding-inline: 4rem;
+  padding-block: 2.5rem;
   align-items: center;
   justify-content: center;
 }
