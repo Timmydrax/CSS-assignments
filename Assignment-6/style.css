@@ -251,6 +251,8 @@ h6 {
   padding-block: 0.75rem;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 .logo {
@@ -671,6 +673,11 @@ h6 {
     padding-inline-start: 1rem;
     font-weight: 700;
     position: relative;
+
+    /* Alternative Border */
+    /* border-inline-start: 5px solid;
+    border-image-source: linear-gradient(to bottom, #112232, #fff);
+    border-image-slice: 1; */
 
     &::before {
       content: "";
@@ -1211,6 +1218,8 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 .footer-container {
