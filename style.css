@@ -181,7 +181,7 @@ h6 {
   > h3 {
     font-size: var(--font-size-32px);
     -webkit-margin-after: var(--font-size-16px);
-            margin-block-end: var(--font-size-16px);
+    margin-block-end: var(--font-size-16px);
     color: var(--font-color);
   }
 }
@@ -198,7 +198,7 @@ h6 {
 
   > i {
     -webkit-margin-start: var(--font-size-8px);
-            margin-inline-start: var(--font-size-8px);
+    margin-inline-start: var(--font-size-8px);
   }
 
   &:hover {
