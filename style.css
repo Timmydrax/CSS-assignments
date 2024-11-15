@@ -77,6 +77,7 @@ h6 {
   --background-color: #fff;
   --primary-color: #3d2b1f;
   --secondary-color: #fffdd0;
+  --font-color: #1d1d1d;
   --font-size-8px: 0.5rem;
   --font-size-16px: 1rem;
   --font-size-24px: 1.5rem;
@@ -93,6 +94,7 @@ h6 {
   width: 100%;
 }
 
+/* Hero Section */
 .hero-section {
   padding-inline: 3rem;
   padding-block: 3rem;
@@ -140,4 +142,78 @@ h6 {
 .hero-image {
   padding-inline: var(--font-size-16px);
   width: 50%;
+}
+
+/* Content Section */
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--font-size-32px);
+  padding-inline: var(--font-size-64px);
+  padding-block: var(--font-size-48px);
+}
+
+.content-header {
+  color: var(--font-color);
+  max-width: 60rem;
+  margin: 0 auto;
+
+  > h2 {
+    font-size: var(--font-size-40px);
+    text-align: center;
+  }
+}
+
+.content-rows {
+  display: flex;
+  flex-direction: row;
+  gap: var(--font-size-32px);
+}
+
+.content-containers {
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--font-size-32px);
+}
+
+.content-text {
+  > h3 {
+    font-size: var(--font-size-32px);
+    -webkit-margin-after: var(--font-size-16px);
+            margin-block-end: var(--font-size-16px);
+    color: var(--font-color);
+  }
+}
+
+.cta-btn {
+  border: none;
+  padding-inline: var(--font-size-32px);
+  padding-block: var(--font-size-16px);
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+
+  > i {
+    -webkit-margin-start: var(--font-size-8px);
+            margin-inline-start: var(--font-size-8px);
+  }
+
+  &:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out;
+  }
+}
+
+.content-image {
+  > img {
+    border-radius: 1rem;
+    border: 2px solid var(--font-color);
+    width: 100%;
+    height: 22.5rem;
+  }
 }
