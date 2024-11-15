@@ -10,6 +10,7 @@
 /* 2. Remove default margin */
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -72,3 +73,71 @@ h6 {
 }
 
 /* Main CSS */
+:root {
+  --background-color: #fff;
+  --primary-color: #3d2b1f;
+  --secondary-color: #fffdd0;
+  --font-size-8px: 0.5rem;
+  --font-size-16px: 1rem;
+  --font-size-24px: 1.5rem;
+  --font-size-32px: 2rem;
+  --font-size-40px: 2.5rem;
+  --font-size-48px: 3rem;
+  --font-size-56px: 3.5rem;
+  --font-size-64px: 4rem;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-section {
+  padding-inline: 3rem;
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--font-size-32px);
+  width: 50%;
+  color: var(--background-color);
+  padding-inline: var(--font-size-16px);
+
+  > h1 {
+    font-size: var(--font-size-64px);
+
+    > span {
+      color: var(--secondary-color);
+    }
+  }
+}
+
+.hero-icons {
+  display: flex;
+  flex-direction: row;
+  gap: var(--font-size-24px);
+
+  > a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
+.fa-github,
+.fa-twitter,
+.fa-linkedin-in {
+  font-size: var(--font-size-24px);
+}
+
+.hero-image {
+  padding-inline: var(--font-size-16px);
+  width: 50%;
+}
