@@ -148,7 +148,7 @@ h6 {
 .content-section {
   display: flex;
   flex-direction: column;
-  gap: var(--font-size-32px);
+  gap: var(--font-size-48px);
   padding-inline: var(--font-size-64px);
   padding-block: var(--font-size-48px);
 }
@@ -174,14 +174,14 @@ h6 {
   max-width: 35rem;
   display: flex;
   flex-direction: column;
-  gap: var(--font-size-32px);
+  gap: var(--font-size-24px);
 }
 
 .content-text {
   > h3 {
     font-size: var(--font-size-32px);
     -webkit-margin-after: var(--font-size-16px);
-    margin-block-end: var(--font-size-16px);
+    margin-block-end: var(--font-size-8px);
     color: var(--font-color);
   }
 }
