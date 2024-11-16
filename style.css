@@ -141,6 +141,7 @@ h6 {
 
 .hero-image {
   padding-inline: var(--font-size-16px);
+  padding-block: var(--font-size-16px);
   width: 50%;
 }
 
@@ -184,6 +185,10 @@ h6 {
     margin-block-end: var(--font-size-8px);
     color: var(--font-color);
   }
+
+  > p {
+    max-width: 33.75rem;
+  }
 }
 
 .cta-btn {
@@ -210,10 +215,43 @@ h6 {
 }
 
 .content-image {
-  > img {
-    border-radius: 1rem;
-    border: 2px solid var(--font-color);
-    width: 100%;
-    height: 22.5rem;
-  }
+  border-radius: 1rem;
+  border: 2px solid var(--font-color);
+  width: 100%;
+  height: 22.5rem;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.one {
+  background-image: url(./assets/images/Assignment\ 1.png);
+}
+
+.two {
+  background-image: url(./assets//images/Assignment\ 2.png);
+}
+
+.three {
+  background-image: url(./assets//images/Assignment\ 3.png);
+}
+
+.four {
+  background-image: url(./assets//images/Assignment\ 4.png);
+}
+
+.five {
+  background-image: url(./assets//images/Assignment\ 5.png);
+}
+
+.six {
+  background-image: url(./assets//images/Assignment\ 6.png);
 }
